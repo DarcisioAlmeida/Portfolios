@@ -2,13 +2,12 @@
 
 ![Bikcraft](./img/bikcraft-qualidade.png 'Bikcraft') <br>
 
-##  do Projeto na Netlife
-[Bikcraft](https://bikecraft-darcisioalmeida.netlify.app/)
+##  Hospedagem do Projeto na Netlify
+[Bikcraft-Darcisio Almeida](https://bikecraft-darcisioalmeida.netlify.app/)
 
 # 💻 Sobre o projeto
 
 O Bikcraft é um projeto realizado baseado no curso HTML, CSS e JS da - [Origamid](https://origamid.com/)
-Origamid. 
 
 ### 🛠 Tecnologias
 
