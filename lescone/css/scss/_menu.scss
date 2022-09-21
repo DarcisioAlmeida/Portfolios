@@ -25,7 +25,7 @@
 			text-align: right;
 			margin-left: -80px;
 			@include d(s) {
-				margin-left: 0px;
+				margin-left: 0;
 				width: auto;
 			}
 		}
@@ -34,14 +34,14 @@
 		border-radius: 50%;
 		border: 10px solid $bege-medio;
 		position: absolute;
-		right: 0px;
+		right: 0;
 		margin-top: 50px;
 		@include d(l) {
 			right: 120px;
 		}
 		@include d(s) {
 			width: 120px;
-			margin-top: 0px;
+			margin-top: 0;
 		}
 	}
 }

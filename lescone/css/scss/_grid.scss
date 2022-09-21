@@ -12,7 +12,7 @@ $s-device: 480px;
   box-sizing: border-box;
 }
 
-// Mixin de media-queries (l-Large, m-Medium, s-small)
+// Mixin de media-queries
 @mixin d($size) {
   @if $size == l {
     @media screen and (min-width: #{$l-device}) {
@@ -64,7 +64,6 @@ $s-device: 480px;
   }
 }
 
-// seleciona todos os grid com classe grid
 [class^="grid-"] {
   @include grid-structure;
 }
