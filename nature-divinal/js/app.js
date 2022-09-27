@@ -1,4 +1,4 @@
-// função para ativar os botoes //
+// Mudar tab ao click
 $('[data-group]').each(function(){
 	var $allTarget = $(this).find('[data-target]'),
 			$allClick = $(this).find('[data-click]'),
@@ -21,7 +21,7 @@ $('[data-group]').each(function(){
 	});
 });
 
-// função para scroll ao click no menu //
+// Scroll suave para link interno
 $('.menu-nav a[href^="#"]').click(function(e){
 	e.preventDefault();
 	var id = $(this).attr('href'),
@@ -32,7 +32,7 @@ $('.menu-nav a[href^="#"]').click(function(e){
 	}, 500);
 });
 
-// função para click scroll ao click na logo
+// Scroll suave para o topo
 $('.logo').click(function(e){
 	e.preventDefault();
 	$('html, body').animate({
@@ -40,7 +40,7 @@ $('.logo').click(function(e){
 	}, 500)
 });
 
-// função para scroll na em cada section //
+// Mudar para active o menu de acordo com a área
 $('section').each(function(){
 	var height = $(this).height(),
 			offsetTop = $(this).offset().top,
@@ -58,20 +58,39 @@ $('section').each(function(){
 	});
 });
 
-// função para menu hamburguer responsivo //
+// Botão do menu mobile
 $('.mobile-btn').click(function(){
 	$(this).toggleClass('active');
 	$('.mobile-menu').toggleClass('active');
 });
 
+// Slider
+function slider(sliderName, velocidade) {
+	var sliderClass = '.' + sliderName,
+			activeClass = 'active',
+			rotate = setInterval(rotateSlide, velocidade);
+	
+	$(sliderClass + ' > :first').addClass(activeClass);
 
+	$(sliderClass).hover(function(){
+		clearInterval(rotate);
+	}, function() {
+		rotate = setInterval(rotateSlide, velocidade);
+	});
+	
+	function rotateSlide() {
+		var activeSlide = $(sliderClass + ' > .' + activeClass),
+				nextSlide = activeSlide.next();
 
+		if(nextSlide.length == 0) {
+			nextSlide = $(sliderClass + ' > :first');
+		}
+		activeSlide.removeClass(activeClass);
+		nextSlide.addClass(activeClass);
+	} 
+}
 
-
-
-
-
-
+slider('introducao', 2000);
 
 
 
