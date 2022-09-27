@@ -58,6 +58,11 @@ $('section').each(function(){
 	});
 });
 
+// função para menu hamburguer responsivo //
+$('.mobile-btn').click(function(){
+	$(this).toggleClass('active');
+	$('.mobile-menu').toggleClass('active');
+});
 
 
 
