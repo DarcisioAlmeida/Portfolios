@@ -1,0 +1,127 @@
+/* Import Font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;514&display=swap");
+/* Import Sass */
+* {
+  color: #fff;
+}
+
+.header {
+  font-size: 12px;
+  font-weight: bold;
+}
+.header .nav-link {
+  margin: 20px;
+  font-size: 14px;
+}
+.header .nav-link:hover {
+  color: #b9b9b9;
+}
+
+.container00 {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrowDown {
+  display: inline-block;
+  width: 90px;
+  margin-top: 5px;
+}
+
+.logoPc {
+  width: 240px;
+  margin-left: -10px;
+  margin-right: 20px;
+}
+
+#button {
+  padding: 15px 35px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  font-weight: 700;
+  color: #000;
+}
+#button:hover {
+  background-color: transparent;
+  color: #b9b9b9;
+}
+
+.footer {
+  background-color: #000;
+  height: 15vh;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer a:hover {
+  color: #b9b9b9;
+}
+
+@media (max-width: 750px) {
+  .titlePadding {
+    padding-top: 120px;
+  }
+  .shortTitle {
+    width: auto;
+    font-size: 50px;
+  }
+  .mediumTitle {
+    width: auto;
+    font-size: 50px;
+  }
+}
+@media (max-width: 405px) {
+  .logoPc {
+    width: 180px;
+    margin-top: 15px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .logoPc {
+    width: 150px;
+    margin-top: 15px;
+  }
+  .shortTitle {
+    font-size: 30px;
+    width: 10px;
+  }
+}
+.container00.container01 {
+  background-image: url(../../assets/images/home/01.jpg);
+}
+.container00.container02 {
+  background-image: url(../../assets/images/home/03.jpg);
+}
+.container00.container03 {
+  background-image: url(../../assets/images/home/02.gif);
+}
+.container00.container04 {
+  background-image: url(../../assets/images/home/04.jpg);
+}
+
+.titlePadding {
+  padding-top: 200px;
+}
+
+.shortTitle {
+  width: 550px;
+  margin-bottom: -25px;
+}
+
+.mediumTitle {
+  width: 650px;
+  margin-bottom: -25px;
+}
+
+/*# sourceMappingURL=style.css.map */

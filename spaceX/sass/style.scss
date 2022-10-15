@@ -1,0 +1,10 @@
+/* Import Font */
+ @import url( "https://fonts.googleapis.com/css2?family=Rubik:wght@400;514&display=swap");
+
+/* Import Sass */
+@import './commumElements/variables.scss';
+@import './commumElements/communElements.scss';
+@import './pages/home.scss';
+@import './pages/falcon9.scss';
+@import './pages/humanSpace.scss';
+

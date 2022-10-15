@@ -1,0 +1,99 @@
+.header{
+  font-size: 12px;
+  font-weight: bold;
+  
+  .nav-link{
+    margin: 20px;
+    font-size: 14px;
+    &:hover {
+      color: $link-hover;
+    }
+  }
+ }
+
+ .container00 {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrowDown {
+  display: inline-block;
+  width: 90px;
+  margin-top: 5px;
+}
+
+.logoPc {
+  width: 240px;
+  margin-left: -10px;
+  margin-right: 20px;
+}
+
+#button {
+  padding: 15px 35px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  font-weight: 700;
+  color: #000;
+  &:hover{
+    background-color: transparent;
+    color: $link-hover;
+  }
+}
+
+.footer {
+  background-color: #000;
+  height: 15vh;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}
+
+// ========== Responsivo Media Query ============ //
+@media (max-width: 750px) {
+  .titlePadding {
+    padding-top: 120px;
+  }
+
+  .shortTitle {
+    width: auto;
+    font-size: 50px;
+  }
+
+  .mediumTitle {
+    width: auto;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 405px) {
+  .logoPc {
+    width: 180px;
+    margin-top: 15px;
+  }
+  
+  .footer {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .logoPc {
+    width: 150px;
+    margin-top: 15px;
+ }
+ .shortTitle {
+  font-size: 30px;
+  width: 10px;
+ }
+} 
